@@ -22,11 +22,6 @@ public class StudentoDarbasController {
         this.studentoDarbasService = studentoDarbasService;
     }
 
-    @GetMapping
-    public String string(){
-        return "hey";
-    }
-
     @PutMapping
     public ResponseEntity<?> gautiDarboGrafika(@RequestBody StudentoDarbasDto studentoDarbasDto){
         List<GrafikasDto> grafikaiDto = studentoDarbasService.gautiGrafika(studentoDarbasDto);
